@@ -9,8 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/fonts.css" type="text/html" rel="stylesheet">
+    <link href="css/sprite.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,12 +28,25 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="header-top__block">
-                                    <div class="header-top__left">
-                                        <img src="img/sprite.png" alt="">
-                                        <a href="#">Скачать прайс-лист <span class="text-green">(*.xls)</span></a>
+                                <div class="header-top__block flex-block centered">
+                                    <div class="header-top__left flex-block centered">
+                                        <div class="header-top__prices flex-block centered">
+                                            <div class="icon icon-xls-icon"></div>
+                                            <a href="#">Скачать прайс-лист <span class="text-green">(*.xls)</span></a>
+                                        </div>
+                                        <div class="header-top__text">
+                                            <span>Принимаем заявки с 8:00 до 21:00</span>
+                                        </div>
                                     </div>
-                                    <div class="header-top__right"></div>
+                                    <div class="header-top__right flex-block centered">
+                                        <div class="header-top__list">
+                                            <ul class="flex-block centered">
+                                                <li>Вопрос-ответ</li>
+                                                <li>Важно знать</li>
+                                                <li>Контакты</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +55,31 @@
                 <div class="header-middle">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12"></div>
+                            <div class="col-md-12">
+                                <div class="header-middle__block flex-block centered justify-sb">
+                                    <div class="header-middle__left flex-block centered">
+                                        <img src="../img/logo.png" alt="" class="logo">
+                                        <div class="header-middle__text">
+                                            <span class="aa-font big-text">геопластборд</span>
+                                            <span class="aa-font text-upper">Пластиковый бордюр для ландшафтного дизайна</span>
+                                        </div>
+                                    </div>
+                                    <div class="header-middle__right flex-block centered">
+                                        <div class="header-middle__contacts">
+                                            <div class="header-middle__phone flex-block centered">
+                                                <div class="icon icon-phone-icon"></div><span class="phone-number"><a
+                                                    href="tel:+7 (903) 969-50-19">+7 (903) 969-50-19</a></span>
+                                            </div>
+                                            <div class="header-middle__email">
+                                                <span class="small-text">Пишите нам: <a href="mailto:emailfirm@mail.com">emailfirm@mail.com</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="header-middle__button">
+                                            <button class="btn btn-orange">заказать звонок</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -29,7 +29,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('sprite', function () { // Создаем таск sprite
     var spriteData = gulp.src('src/sprite/*.png').pipe(spritesmith({ // Настройка спрайта
-        imgName: 'sprite.png',
+        imgName: '../img/sprite.png',
         cssName: 'sprite.css'
     }));
     // return spriteData.pipe(gulp.dest('app/img/')); // выгружаем спрайты в папку img
@@ -54,12 +54,14 @@ gulp.task('css-libs', ['css'], function() {
     return gulp.src('app/css/style.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-        .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
+        .pipe(gulp.dest('app/css')) // Выгружаем в папку app/css
+        .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
-gulp.task('watch', ['browser-sync', 'css', 'scripts', 'sprite'], function() {
-    gulp.watch('src/css/**/*.css', ['css']); // Наблюдение за css файлами в папке css
+gulp.task('watch', ['browser-sync', 'scripts', 'sprite', 'css-libs', 'img'], function() {
+    gulp.watch('src/css/**/*.css', ['css', 'css-libs']); // Наблюдение за css файлами в папке css
     gulp.watch('src/sprite/*.png', ['sprite']); // Наблюдение за папкой с картинками для спрайтов  папке sprite
+    gulp.watch('app/*.css', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });

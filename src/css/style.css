@@ -1,3 +1,5 @@
+@import url('fonts.css');
+
 /* STYLE RESET START */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,7 +28,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-family: 'Museo Sans Cyrl 500';
 }
 body * {
 	font-family: 'Museo Sans Cyrl 500';
@@ -46,6 +47,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.header>.row>.col-md-12 {
+	padding: 0;
+}
 /* STYLE RESET END */
 
 
@@ -53,13 +57,98 @@ table {
 .text-green {
 	color: #14662d;
 }
+.icon {
+	display: inline-block;
+}
+.btn {
+	font-size: 14px;
+	font-family: "Museo Sans Cyrl 700";
+	text-transform: uppercase;
+}
+.btn-orange {
+	background: linear-gradient(to left, #e79f00, #ffbb79);
+	color: #ffffff;
+	box-shadow: 0 0 20px rgba(255,187,121,.5);
+}
+
+.flex-block {
+	display: flex;
+}
+.centered {
+	align-items: center;
+	justify-content: center;
+}
+.justify-sb {
+	justify-content: space-between;
+}
+.aa-font {
+	font-family: 'AA';
+}
+.big-text {
+	font-size: 29px;
+	font-weight: 400;
+}
+.small-text {
+	font-size: 13px;
+	font-weight: 300;
+}
+.phone-number {
+	font-size: 26px;
+	font-family: "Museo Sans Cyrl 700";
+}
+.text-upper {
+	text-transform: uppercase;
+}
 /* CUSTOM STYLES END */
 
 
 /* MAIN STYLES START */
 
 /*header styles start*/
-
+.header-top {
+	padding: 20px 0 15px 0;
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.header-top__block {
+	justify-content: space-between;
+}
+.header-top__prices * {
+	font-family: "Museo Sans Cyrl 700";
+	font-size: 14px;
+}
+.header-top__prices a {
+	margin-left: 12px;
+	color: inherit;
+}
+.header-top__prices a:hover {
+	color: #14662d;
+}
+.header-top__text {
+	margin-left: 45px;
+}
+.header-top__list ul li+li {
+	margin-left: 40px;
+}
+.header-middle {
+	padding: 12px 0;
+}
+.header-middle__text {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
+.header-middle__text span + span {
+	margin-top: 10px;
+}
+.header-middle__contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.header-middle__button {
+	margin-left: 20px;
+}
 /*header styles end*/
 
 /* MAIN STYLES END */
