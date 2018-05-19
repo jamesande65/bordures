@@ -61,6 +61,7 @@ gulp.task('css-libs', ['css'], function() {
 gulp.task('watch', ['browser-sync', 'scripts', 'sprite', 'css-libs', 'img'], function() {
     gulp.watch('src/css/**/*.css', ['css', 'css-libs']); // Наблюдение за css файлами в папке css
     gulp.watch('src/sprite/*.png', ['sprite']); // Наблюдение за папкой с картинками для спрайтов  папке sprite
+    gulp.watch('src/img/*.png', ['img']); // Наблюдение за папкой с картинками для спрайтов  папке sprite
     gulp.watch('app/*.css', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
