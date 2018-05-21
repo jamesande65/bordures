@@ -953,10 +953,12 @@ nav.header-nav ul {
 }
 .contact-info__block {
 	background: url(../img/transparent-5.png) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     padding: 57px 57px 28px 57px;
-    margin-bottom: 150px;
     text-align: left;
+    position: absolute;
+    bottom: 0;
+    bottom: 150px;
 }
 .contact-info__block .bold-text {
 	font-family: "Museo Sans Cyrl 700";
@@ -967,11 +969,16 @@ nav.header-nav ul {
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: uppercase;
+	margin-bottom: -7px;
 }
 .footer hr {
 	width: 30px;
-	height: 6px;
+	height: 3px;
 	background-color: #ffffff;
+	float: left;
+}
+.contact-info__address{
+	clear: left;
 }
 .contact-info__address,
 .contact-info__phone {
@@ -979,5 +986,69 @@ nav.header-nav ul {
 	font-family: "Museo Sans Cyrl 300";
 	font-size: 14px;
 	line-height: 20px;
+	position: relative;
+}
+.contact-info__address {
+	margin-top: 62px;
+}
+.contact-info__phone {
+	margin-top: 45px;
+}
+.contact-info__address .icon ,
+.contact-info__phone .icon {
+	position: absolute;
+	left: -30px;
+}
+.contact-info__block .btn-white {
+	text-transform: initial;
+	border: none;
+	margin-top: 46px;
+}
+.contact-info__block .btn-white a {
+	color: #222225;
+}
+.contact-info__bottom-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 28px;
+	opacity: 0.63;
+	color: #010101;
+}
+.contact-info__bottom-text span:last-child {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 10px;
+}
+.footer-middle,
+.footer-right {
+	padding-top: 50px;
+	padding-bottom: 123px;
+}
+.footer-middle__text {
+	color: #ffffff;
+	font-family: "Museo Sans Cyrl 700";
+	font-size: 16px;
+	display: inline-block;
+}
+.footer-middle .text-orange {
+	font-family: "Museo Sans Cyrl 900";
+	font-size: 28px;
+	display: inline-block;
+	margin-top: 8px;
+}
+.footer-middle span + span {
+	margin-top: 15px;
+}
+.footer-right span {
+	color: #ffffff;
+	font-family: "Museo Sans Cyrl 100";
+	font-size: 13px;
+	line-height: 19px;
+	text-align: center;
+	display: inline-block;
+}
+.footer-right .btn {
+	margin-top: 18px;
 }
 /* FOOTER STYLES END */
