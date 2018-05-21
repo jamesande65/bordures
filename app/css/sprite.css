@@ -16,6 +16,18 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-arrow-down-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -280px -118px;
+  width: 13px;
+  height: 9px;
+}
+.icon-arrow-up-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -131px -159px;
+  width: 13px;
+  height: 9px;
+}
 .icon-box-icon {
   background-image: url(../img/sprite.png);
   background-position: -224px 0px;
@@ -72,7 +84,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-lock-icon {
   background-image: url(../img/sprite.png);
-  background-position: -195px -137px;
+  background-position: -99px -80px;
   width: 12px;
   height: 15px;
 }
@@ -90,7 +102,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-phone-icon {
   background-image: url(../img/sprite.png);
-  background-position: -165px -137px;
+  background-position: -183px -137px;
   width: 15px;
   height: 15px;
 }
@@ -102,7 +114,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-plus-icon {
   background-image: url(../img/sprite.png);
-  background-position: -180px -137px;
+  background-position: -198px -137px;
   width: 15px;
   height: 15px;
 }
@@ -115,6 +127,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 .icon-shopping-cart-icon {
   background-image: url(../img/sprite.png);
   background-position: -147px -137px;
+  width: 18px;
+  height: 18px;
+}
+.icon-shopping-cart-orange-icon {
+  background-image: url(../img/sprite.png);
+  background-position: -165px -137px;
   width: 18px;
   height: 18px;
 }
