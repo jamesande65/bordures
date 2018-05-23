@@ -8,10 +8,12 @@
     <title>Bordures</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fonts.css" type="text/html" rel="stylesheet">
-    <link href="css/sprite.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <link href="/css/fonts.css" type="text/html" rel="stylesheet">
+    <link href="/css/sprite.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/media.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,6 +26,23 @@
     <div class="container-fluid header">
         <div class="row">
             <div class="col-md-12">
+                <div class="burger js-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-mob js-mob-menu">
+                    <ul>
+                        <li><a href="#">АКЦИИ</a></li>
+                        <li><a href="#">ВАША ВЫГОДА</a></li>
+                        <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                        <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+                        <li><a href="#">ФОТОГАЛЕРЕЯ</a></li>
+                        <li><a href="#">ДОСТАВКА</a></li>
+                        <li><a href="#">ВОПРОС-ОТВЕТ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
                 <div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -86,27 +105,21 @@
                     </div>
                 </div>
                 <div class="header-bottom">
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <nav class="header-nav">
-                                                <ul>
-                                                    <li><a href="#">АКЦИИ</a></li>
-                                                    <li><a href="#">ВАША ВЫГОДА</a></li>
-                                                    <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
-                                                    <li><a href="#">ПРАЙС-ЛИСТ</a></li>
-                                                    <li><a href="#">ФОТОГАЛЕРЕЯ</a></li>
-                                                    <li><a href="#">ДОСТАВКА</a></li>
-                                                    <li><a href="#">ВОПРОС-ОТВЕТ</a></li>
-                                                    <li><a href="#">КОНТАКТЫ</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
+                                <nav class="header-nav">
+                                    <ul>
+                                        <li><a href="#">АКЦИИ</a></li>
+                                        <li><a href="#">ВАША ВЫГОДА</a></li>
+                                        <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                                        <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+                                        <li><a href="#">ФОТОГАЛЕРЕЯ</a></li>
+                                        <li><a href="#">ДОСТАВКА</a></li>
+                                        <li><a href="#">ВОПРОС-ОТВЕТ</a></li>
+                                        <li><a href="#">КОНТАКТЫ</a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -114,84 +127,76 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid content">
-        <div class="row main-banner">
-            <div class="col-md-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="main-banner__left col-md-8 ">
-                            <div class="main-banner__title">
-                                <span>Производим пластиковые бордюры с доставкой по всей России от 1 м</span>
-                            </div>
-                            <div class="main-banner__info">
-                                <div class="main-banner__img">
-                                    <img src="/img/main-banner-bordure.png" alt="">
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row main-banner">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="main-banner__left col-md-8 col-sm-12 ">
+                                <div class="main-banner__title">
+                                    <span>Производим пластиковые бордюры с доставкой по всей России от 1 м</span>
                                 </div>
-                                <div class="main-banner__text">
-                                    <div class="main-banner__text-top">
-                                        <span class="main-banner__offer text-orange">АКЦИЯ!</span>
+                                <div class="main-banner__info">
+                                    <div class="main-banner__img">
+                                        <img src="/img/main-banner-bordure.png" alt="">
                                     </div>
-                                    <div class="main-banner__text-bottom">
-                                        <span>При покупке садового бордюра «BORDUR» до 15 апреля <span class="text-orange">скидка 10%</span> на весь ассортимент!</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-banner__form col-md-3">
-                            <div class="main-banner__form-img"></div>
-                            <div class="main-banner__form-title">
-                                <span>Скачать <span class="text-orange">каталог</span> со всеми видами пластиковых бордюров</span>
-                            </div>
-                            <form action="javascript:void(0)">
-                                <div class="form-group">
-                                    <label for="name" class="icon-man-icon"></label>
-                                    <input type="text" id="name" placeholder="Ваше имя">
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone" class="icon-phone-icon"></label>
-                                    <input type="text" id="phone" placeholder="Ваш номер телефона">
-                                </div>
-                                <button type="submit" class="btn btn-big btn-orange">СКАЧАТЬ КАТАЛОГ</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row how-to">
-            <div class="col-md-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="how-to__block">
-                                <div class="how-to__left col-md-8">
-                                    <div class="icon-newspaper-icon"></div>
-                                    <div class="how-to__text">
-                                        <span class="text-title">“Как правильно выбрать бордюры под свой проект ландшафтного дизайна?”</span>
-                                        <p class="text-paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! Рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития...</p>
+                                    <div class="main-banner__text">
+                                        <div class="main-banner__text-top">
+                                            <span class="main-banner__offer text-orange">АКЦИЯ!</span>
+                                        </div>
+                                        <div class="main-banner__text-bottom">
+                                            <span>При покупке садового бордюра «BORDUR» до 15 апреля <span class="text-orange">скидка 10%</span> на весь ассортимент!</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
+                            </div>
+                            <div class="main-banner__form col-lg-3 col-md-4 col-sm-12">
+                                <div class="main-banner__form-img"></div>
+                                <div class="main-banner__form-title">
+                                    <span>Скачать <span class="text-orange">каталог</span> со всеми видами пластиковых бордюров</span>
                                 </div>
+                                <form action="javascript:void(0)">
+                                    <div class="form-group">
+                                        <label for="name" class="icon-man-icon"></label>
+                                        <input type="text" id="name" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone" class="icon-phone-icon"></label>
+                                        <input type="text" id="phone" placeholder="Ваш номер телефона">
+                                    </div>
+                                    <button type="submit" class="btn btn-big btn-orange">СКАЧАТЬ КАТАЛОГ</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row why-us">
-            <div class="col-md-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block-title">
-                                <span class="block-title__text">Почему выгоднее покупать у нас?</span>
-                                <span class="block-title__stripe-green"></span>
-                            </div>
-                        </div>
+        <div class="container how-to">
+            <div class="row how-to__block">
+                <div class="how-to__left col-md-8 col-sm-12">
+                    <div class="icon-newspaper-icon"></div>
+                    <div class="how-to__text">
+                        <span class="text-title">“Как правильно выбрать бордюры под свой проект ландшафтного дизайна?”</span>
+                        <p class="text-paragraph">Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! Рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития...</p>
                     </div>
-                    <div class="row flex-block">
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row why-us">
+                <div class="col-md-12">
+                    <div class="block-title">
+                        <span class="block-title__text">Почему выгоднее покупать у нас?</span>
+                        <span class="block-title__stripe-green"></span>
+                    </div>
+                </div>
+                <div class="col-md-12 flex-block">
+                    <div class="row">
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="why-us__block">
                                 <div class="why-us__img">
@@ -232,10 +237,10 @@
                 </div>
             </div>
         </div>
-        <div class="row stripe-1">
-            <div class="col-md-12">
-                <div class="stripe__background"></div>
-                <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 stripe-1">
+                    <div class="stripe__background"></div>
                     <div class="row">
                         <div class="stripe-1__block col-md-4">
                             <div class="stripe-1__number">
@@ -267,10 +272,10 @@
                 </div>
             </div>
         </div>
-        <div class="row advantages">
-            <div class="col-md-12">
-                <div class="stripe__background-white"></div>
-                <div class="container">
+        <div class="container-fluid">
+            <div class="row advantages">
+                <div class="col-md-12">
+                    <div class="stripe__background-white"></div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="block-title">
@@ -280,7 +285,7 @@
                         </div>
                     </div>
                     <div class="row flex-block">
-                        <div class="col-md-4 col-sm-6 col-xs-12 left">
+                        <div class="col-md-4 col-sm-12 left">
                             <div class="advantages__block">
                                 <div class="advantages__img icon-round">
                                     <div class="icon-chemical-icon"></div>
@@ -306,14 +311,14 @@
                                 <p>Просто делать извилистые дорожки, радиусы, любые криволинейные контуры</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 advantages__center-block">
+                        <div class="col-md-4 col-sm-12 advantages__center-block">
                             <div class="advantages-block__img">
                                 <div class="advantages-block__img-man">
-                                    
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 right">
+                        <div class="col-md-4 col-sm-12 right">
                             <div class="advantages__block">
                                 <p>Легко перенести с одного места на другое и при необходимости поменять форму</p>
                                 <div class="advantages__img icon-round">
@@ -341,12 +346,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="advantages-block__grass"></div>
             </div>
-            <div class="advantages-block__grass"></div>
         </div>
-        <div class="row stripe-2">
-            <div class="col-md-12">
-                <div class="container">
+        <div class="container-fluid">
+            <div class="row stripe-2">
+                <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div class="main-banner__form-title">
@@ -376,10 +381,10 @@
                 </div>
             </div>
         </div>
-        <div class="row our-bordures">
-            <div class="col-md-12">
-                <div class="stripe__background"></div>
-                <div class="container">
+        <div class="container-fluid">            
+            <div class="row our-bordures">
+                <div class="col-md-12">
+                    <div class="stripe__background"></div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="block-title">
@@ -412,7 +417,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="our-bordures__row">    
+                                    <div class="our-bordures__row">
                                         <div class="our-bordures__characteristics">
                                             <div>
                                                 <span>Длина:</span>
@@ -464,7 +469,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="our-bordures__row">    
+                                    <div class="our-bordures__row">
                                         <div class="our-bordures__characteristics">
                                             <div>
                                                 <span>Длина:</span>
@@ -518,7 +523,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="our-bordures__row">    
+                                    <div class="our-bordures__row">
                                         <div class="our-bordures__characteristics">
                                             <div>
                                                 <span>Длина:</span>
@@ -570,7 +575,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="our-bordures__row">    
+                                    <div class="our-bordures__row">
                                         <div class="our-bordures__characteristics">
                                             <div>
                                                 <span>Длина:</span>
@@ -600,9 +605,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container our-bordures__bottom">
-                    <div class="row flex-block centered">
+                    <div class="row our-bordures__bottom flex-block centered">
                         <div class="col-md-3">
                             <div class="header-top__prices flex-block centered">
                                 <div class="icon icon-xls-icon"></div>
@@ -616,10 +619,10 @@
                 </div>
             </div>
         </div>
-        <div class="row our-projects">
-            <div class="col-md-12">
-                <div class="stripe__background-white"></div>
-                <div class="container">
+        <div class="container">
+            <div class="row our-projects">
+                <div class="col-md-12">
+                    <div class="stripe__background-white"></div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="block-title">
@@ -678,7 +681,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-3">
                             <div class="our-projects__block">
                                 <img src="/img/6.png" alt="">
                                 <div class="our-projects__text">
@@ -738,239 +741,249 @@
                 </div>
             </div>
         </div>
-        <div class="row articles">
-            <div class="col-md-12">
-                <div class="stripe__background"></div>
-                <div class="container">
-                    <div class="row flex-block">
-                        <div class="col-md-4">
-                            <div class="articles__block">
-                                <img src="/img/news-1.png" alt="">
-                                <span>«Технологии производства бордюров»</span>
-                                <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
-                                <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="articles__block">
-                                <img src="/img/news-2.png" alt="">
-                                <span>«Как правильно устанавливать бордюры?»</span>
-                                <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
-                                <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="articles__block">
-                                <img src="/img/news-3.png" alt="">
-                                <span>«Как правильно сделать изгибы?»</span>
-                                <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
-                                <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row faq">
-            <div class="col-md-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="block-title">
-                                <span class="block-title__text">ОТВЕТЫ НА ЧАСТО-задаваемые ВОПРОСЫ:</span>
-                                <span class="block-title__stripe-green"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row flex-block">
-                        <div class="col-md-6">
-                            <div class="faq__block">
-                                <div class="faq__question">
-                                    <div class="avatar">В</div>
-                                    <div class="faq__text">
-                                        <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
-                                    </div>
-                                </div>
-                                <div class="faq__answer">  
-                                    <div class="avatar">О</div>
-                                    <div class="faq__text">
-                                        <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
-                                    </div>
+        <div class="container-fluid">
+            <div class="row articles">
+                <div class="col-md-12">
+                    <div class="stripe__background"></div>
+                    <div class="container">
+                        <div class="row flex-block">
+                            <div class="col-md-4">
+                                <div class="articles__block">
+                                    <img src="/img/news-1.png" alt="">
+                                    <span>«Технологии производства бордюров»</span>
+                                    <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                                    <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="faq__block">
-                                <div class="faq__question">
-                                    <div class="avatar">В</div>
-                                    <div class="faq__text">
-                                        <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
-                                    </div>
-                                </div>
-                                <div class="faq__answer">  
-                                    <div class="avatar">О</div>
-                                    <div class="faq__text">
-                                        <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
-                                    </div>
+                            <div class="col-md-4">
+                                <div class="articles__block">
+                                    <img src="/img/news-2.png" alt="">
+                                    <span>«Как правильно устанавливать бордюры?»</span>
+                                    <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                                    <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row flex-block">
-                        <div class="col-md-6">
-                            <div class="faq__block">
-                                <div class="faq__question">
-                                    <div class="avatar">В</div>
-                                    <div class="faq__text">
-                                        <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
-                                    </div>
-                                </div>
-                                <div class="faq__answer">  
-                                    <div class="avatar">О</div>
-                                    <div class="faq__text">
-                                        <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="faq__block">
-                                <div class="faq__question">
-                                    <div class="avatar">В</div>
-                                    <div class="faq__text">
-                                        <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
-                                    </div>
-                                </div>
-                                <div class="faq__answer">  
-                                    <div class="avatar">О</div>
-                                    <div class="faq__text">
-                                        <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row flex-block">
-                        <div class="col-md-6">
-                            <div class="faq__block">
-                                <div class="faq__question">
-                                    <div class="avatar">В</div>
-                                    <div class="faq__text">
-                                        <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
-                                    </div>
-                                </div>
-                                <div class="faq__answer">  
-                                    <div class="avatar">О</div>
-                                    <div class="faq__text">
-                                        <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="faq__block">
-                                <div class="faq__question">
-                                    <div class="avatar">В</div>
-                                    <div class="faq__text">
-                                        <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
-                                    </div>
-                                </div>
-                                <div class="faq__answer">  
-                                    <div class="avatar">О</div>
-                                    <div class="faq__text">
-                                        <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
-                                    </div>
+                            <div class="col-md-4">
+                                <div class="articles__block">
+                                    <img src="/img/news-3.png" alt="">
+                                    <span>«Как правильно сделать изгибы?»</span>
+                                    <p>Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                                    <button class="btn btn-white">ЧИТАТЬ СТАТЬЮ</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="faq__background"></div>
         </div>
-        <div class="row stripe-2 stripe-3">
-            <div class="col-md-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="main-banner__form-title">
-                                <span>ОСТАЛИСЬ <span class="text-orange">ВОПРОСЫ?</span> ПоЗвоните К НАМ по номеру <span class="bold-text">8 (800) 123-45-69</span> или оставьте заявку на обратный звонок специалиста: </span>
+        <div class="container-fluid">
+            <div class="row faq">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block-title">
+                                    <span class="block-title__text">ОТВЕТЫ НА ЧАСТО-задаваемые ВОПРОСЫ:</span>
+                                    <span class="block-title__stripe-green"></span>
+                                </div>
                             </div>
-                            <form action="javascript:void(0)">
-                                <div class="form-group">
-                                    <label for="stripe-2-name" class="icon-man-icon"></label>
-                                    <input type="text" id="stripe-2-name" placeholder="Ваше имя">
+                        </div>
+                        <div class="row flex-block">
+                            <div class="col-md-6">
+                                <div class="faq__block">
+                                    <div class="faq__question">
+                                        <div class="avatar">В</div>
+                                        <div class="faq__text">
+                                            <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
+                                        </div>
+                                    </div>
+                                    <div class="faq__answer">
+                                        <div class="avatar">О</div>
+                                        <div class="faq__text">
+                                            <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="stripe-2-phone" class="icon-phone-icon"></label>
-                                    <input type="text" id="stripe-2-phone" placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="faq__block">
+                                    <div class="faq__question">
+                                        <div class="avatar">В</div>
+                                        <div class="faq__text">
+                                            <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
+                                        </div>
+                                    </div>
+                                    <div class="faq__answer">
+                                        <div class="avatar">О</div>
+                                        <div class="faq__text">
+                                            <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="submit" class="btn btn-orange">ОСТАВИТЬ ЗАЯВКУ</button>
-                            </form>
+                            </div>
+                        </div>
+                        <div class="row flex-block">
+                            <div class="col-md-6">
+                                <div class="faq__block">
+                                    <div class="faq__question">
+                                        <div class="avatar">В</div>
+                                        <div class="faq__text">
+                                            <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
+                                        </div>
+                                    </div>
+                                    <div class="faq__answer">
+                                        <div class="avatar">О</div>
+                                        <div class="faq__text">
+                                            <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="faq__block">
+                                    <div class="faq__question">
+                                        <div class="avatar">В</div>
+                                        <div class="faq__text">
+                                            <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
+                                        </div>
+                                    </div>
+                                    <div class="faq__answer">
+                                        <div class="avatar">О</div>
+                                        <div class="faq__text">
+                                            <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex-block">
+                            <div class="col-md-6">
+                                <div class="faq__block">
+                                    <div class="faq__question">
+                                        <div class="avatar">В</div>
+                                        <div class="faq__text">
+                                            <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
+                                        </div>
+                                    </div>
+                                    <div class="faq__answer">
+                                        <div class="avatar">О</div>
+                                        <div class="faq__text">
+                                            <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="faq__block">
+                                    <div class="faq__question">
+                                        <div class="avatar">В</div>
+                                        <div class="faq__text">
+                                            <span>“Какой бордюр лучше использовать для оформления садовых дорожек?”</span>
+                                        </div>
+                                    </div>
+                                    <div class="faq__answer">
+                                        <div class="avatar">О</div>
+                                        <div class="faq__text">
+                                            <p>- Значимость этих проблем настолько очевидна, что новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют от</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="stripe-2__bottom-text">
-                                <div class="icon-lock-icon"></div>
-                                <span>Мы гарантируем конфиденциальность данных</span>
+                </div>
+                <div class="faq__background"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row stripe-2 stripe-3">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="main-banner__form-title">
+                                    <span>ОСТАЛИСЬ <span class="text-orange">ВОПРОСЫ?</span> ПоЗвоните К НАМ по номеру <span class="bold-text">8 (800) 123-45-69</span> или оставьте заявку на обратный звонок специалиста: </span>
+                                </div>
+                                <form action="javascript:void(0)">
+                                    <div class="form-group">
+                                        <label for="stripe-2-name" class="icon-man-icon"></label>
+                                        <input type="text" id="stripe-2-name" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stripe-2-phone" class="icon-phone-icon"></label>
+                                        <input type="text" id="stripe-2-phone" placeholder="Ваш номер телефона">
+                                    </div>
+                                    <button type="submit" class="btn btn-orange">ОСТАВИТЬ ЗАЯВКУ</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="stripe-2__bottom-text">
+                                    <div class="icon-lock-icon"></div>
+                                    <span>Мы гарантируем конфиденциальность данных</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row stripe-4">
-            <div class="col-md-12">
-                <div class="stripe__background"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="stripe-1__block col-md-3">
-                            <div class="stripe-1__number">
-                                <div class="icon-checked-green-icon"></div>
+        <div class="container-fluid">
+            <div class="row stripe-4">
+                <div class="col-md-12">
+                    <div class="stripe__background"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="stripe-1__block col-md-3">
+                                <div class="stripe-1__number">
+                                    <div class="icon-checked-green-icon"></div>
+                                </div>
+                                <div class="stripe-1__text">
+                                    <p>Первое преимущество<br>
+                                        работы с Вами, как<br>
+                                    с поставщиком бордюров</p>
+                                </div>
                             </div>
-                            <div class="stripe-1__text">
-                                <p>Первое преимущество<br>
-                                    работы с Вами, как<br>
-                                с поставщиком бордюров</p>
+                            <div class="stripe-1__block col-md-3">
+                                <div class="stripe-1__number">
+                                    <div class="icon-checked-green-icon"></div>
+                                </div>
+                                <div class="stripe-1__text">
+                                    <p>Второе преимущество<br>
+                                        работы с Вами, как<br>
+                                    с поставщиком бордюров</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="stripe-1__block col-md-3">
-                            <div class="stripe-1__number">
-                                <div class="icon-checked-green-icon"></div>
+                            <div class="stripe-1__block col-md-3">
+                                <div class="stripe-1__number">
+                                    <div class="icon-checked-green-icon"></div>
+                                </div>
+                                <div class="stripe-1__text">
+                                    <p>Третье преимущество<br>
+                                        работы с Вами, как<br>
+                                    с поставщиком бордюров</p>
+                                </div>
                             </div>
-                            <div class="stripe-1__text">
-                                <p>Второе преимущество<br>
-                                    работы с Вами, как<br>
-                                с поставщиком бордюров</p>
-                            </div>
-                        </div>
-                        <div class="stripe-1__block col-md-3">
-                            <div class="stripe-1__number">
-                                <div class="icon-checked-green-icon"></div>
-                            </div>
-                            <div class="stripe-1__text">
-                                <p>Третье преимущество<br>
-                                    работы с Вами, как<br>
-                                с поставщиком бордюров</p>
-                            </div>
-                        </div>
-                        <div class="stripe-1__block col-md-3">
-                            <div class="stripe-1__number">
-                                <div class="icon-checked-green-icon"></div>
-                            </div>
-                            <div class="stripe-1__text">
-                                <p>Четвертое преимущество<br>
-                                    работы с Вами, как<br>
-                                с поставщиком бордюров</p>
+                            <div class="stripe-1__block col-md-3">
+                                <div class="stripe-1__number">
+                                    <div class="icon-checked-green-icon"></div>
+                                </div>
+                                <div class="stripe-1__text">
+                                    <p>Четвертое преимущество<br>
+                                        работы с Вами, как<br>
+                                    с поставщиком бордюров</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2260.124518522721!2d37.564835215417354!3d55.4953554192863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQuNC80YTQtdGA0L7Qv9C-0LvRjNGB0LrQvtC1INGI0L7RgdGB0LUgMTTQkSDRgTE!5e0!3m2!1sru!2sua!4v1526861372283" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="container-fluid">
+            <div class="row map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2260.124518522721!2d37.564835215417354!3d55.4953554192863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0KHQuNC80YTQtdGA0L7Qv9C-0LvRjNGB0LrQvtC1INGI0L7RgdGB0LUgMTTQkSDRgTE!5e0!3m2!1sru!2sua!4v1526861372283" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <div class="container-fluid footer">        
@@ -979,7 +992,7 @@
                 <div class="stripe__background"></div>
                 <div class="container">
                     <div class="row flex-block">
-                        <div class="col-md-offset-1 col-md-4">
+                        <div class="col-md-offset-1 col-md-4 col-sm-12">
                             <div class="contact-info__block">
                                 <div class="contact-info__title">
                                     КОНТАКТЫ:
@@ -1009,12 +1022,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-middle col-md-offset-1 col-md-3">
+                        <div class="footer-middle col-md-offset-1 col-md-3 col-sm-12">
                             <span class="footer-middle__text">Специальные условия для дилеров и ландшафтных дизайнеров!</span>
                             <span class="footer-middle__text">Звоните по номеру: <span class="text-orange">8 (800) 123-45-68</span>
                             </span>
                         </div>
-                        <div class="footer-right col-md-3">
+                        <div class="footer-right col-md-3 col-sm-12">
                             <span>Или оставьте контактный телефон и наши специалисты свяжутся с Вами в кротчайший срок</span>
                             <button class="btn btn-orange">перезвонить вам</button>
                         </div>
@@ -1029,5 +1042,6 @@
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.min.js"></script>
 </body>
 </html>

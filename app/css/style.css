@@ -50,6 +50,19 @@ table {
 .header>.row>.col-md-12 {
 	padding: 0;
 }
+img {
+	max-width: 100%;
+}
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	max-width: 100%;
+}
+.container-fluid>.row {
+	margin: 0;
+}
 /* STYLE RESET END */
 
 
@@ -170,7 +183,7 @@ table {
 	font-size: 26px;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-left: 11px;
+	margin-left: 11px !important;
 }
 .text-upper {
 	text-transform: uppercase;
@@ -229,6 +242,58 @@ table {
 
 
 /* MAIN STYLES START */
+
+/*mobile menu styles start*/
+.burger {
+	display: none;
+    position: fixed;
+    width: 40px;
+    height: 35px;
+    background: rgba(0,0,0,.5);
+    top: 10px;
+    right: 12px;
+    z-index: 999;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+.burger span {
+	display: inline-block;
+	width: 35px;
+	border: 3px solid #ffffff;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+.header-mob {
+	display: none;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    width: 257px;
+    padding: 20px;
+}
+.header-mob a{
+	display: inline-block;
+    padding: 10px;
+    margin: 5px 0;
+    color: #ffffff;
+}
+.active {
+	display: block;
+}
+/*mobile menu styles end*/
 
 /*header styles start*/
 .header-top {
@@ -321,7 +386,7 @@ nav.header-nav ul {
 	font-family: "Museo Sans Cyrl 500";
 	font-size: 12px;
 	line-height: 24px;
-	padding: 11px 24px;
+	padding: 11px 0;
 	white-space: nowrap;
 	border-top: 6px solid transparent;
 	text-decoration: none;
@@ -342,6 +407,9 @@ nav.header-nav ul {
 	background-position-y: 90%;
 	-webkit-clip-path: ellipse(125% 100% at 51% 0px);
 	        clip-path: ellipse(125% 100% at 51% 0px);
+}
+.main-banner * {
+	max-width: 100%;
 }
 .main-banner .row {
     display: -webkit-box;
@@ -496,8 +564,9 @@ nav.header-nav ul {
 /*main banner styles end*/
 
 /*how to block styles start*/
-.how-to .container {
-    padding: 43px 0;
+.how-to.container {
+    padding-top: 43px;
+    padding-bottom: 43px;
     border-bottom: 1px solid hsla(0,0%,84%,.77);
 }
 .how-to__block {
@@ -1149,7 +1218,7 @@ nav.header-nav ul {
 	font-family: "Museo Sans Cyrl 900";
 	font-size: 24px;
 	text-transform: uppercase;
-	width: 51px;
+    min-width: 51px;
 	height: 51px;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1273,7 +1342,7 @@ nav.header-nav ul {
     padding: 57px 57px 28px 57px;
     text-align: left;
     position: absolute;
-    bottom: 0;
+    z-index: 999;
     bottom: 150px;
 }
 .contact-info__block .bold-text {
